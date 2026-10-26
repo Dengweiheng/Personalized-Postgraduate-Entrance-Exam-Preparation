@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: #f5f7fb;
+}
+
+.app-shell {
+  height: 100%;
+}
+
+.app-aside {
+  background: linear-gradient(180deg, #194f7f 0%, #123a5d 100%);
+  color: #fff;
+}
+
+.brand {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.menu {
+  border-right: none;
+  background: transparent;
+}
+
+.menu .el-menu-item {
+  color: #d5e7f8;
+}
+
+.menu .el-menu-item.is-active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.app-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8ebf2;
+  background: #fff;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2b3d;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.app-main {
+  padding: 18px;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(17, 29, 53, 0.06);
+}
+
+.page-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: url('/images/auth_bg.png') no-repeat center center;
+  background-size: cover;
+}
+
+.auth-panel {
+  width: 420px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(18, 58, 93, 0.14);
+}
+
+.auth-panel h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #173a5f;
+}
+
+.auth-subtitle {
+  margin: 10px 0 18px;
+  color: #6b778c;
+  font-size: 14px;
+}
+
+.auth-link-row {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #6b778c;
+}
+
+@media (max-width: 960px) {
+  .app-aside {
+    display: none;
+  }
+
+  .app-main {
+    padding: 12px;
+  }
+
+  .auth-panel {
+    padding: 22px;
+    border-radius: 12px;
+  }
+}
